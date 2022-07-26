@@ -31,6 +31,11 @@ header{
     height: 100px;
     background-color: $dark-color;
     border-bottom: $light-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     .navbar{
         padding: 20px 0;
         display: flex;
@@ -68,8 +73,8 @@ header{
 }
 main{
     .hero__img{
-        background-color: red;
-        height: 90vh;
+        background-color: #0078AA;
+        height: 100vh;
         .hero__content{
             height: 100vh;
             display: flex;
@@ -109,7 +114,6 @@ main{
                 max-width: 1110px;
             }
             .hero__btn{
-                margin: 0 0 60px;
                 .btn-1{
                     background-image: linear-gradient(to right, #7450fe 0%, #21d397 100%), linear-gradient(to right, #7450fe 0%, #21d397 100%);
                     color: $light-color;
@@ -139,6 +143,32 @@ main{
                     font-weight: 600;
                     border-radius: 3px;
                 }
+            }
+        }
+    }
+    .news{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 30px;
+        .news__header{
+            h1{
+                font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            color: #232d37;
+            line-height: 1.25;
+            font-size: 38px;
+            }
+        }
+        .news__text{
+            margin-top: 15px;
+            p{
+            font-family: 'Poppins', sans-serif;
+            color: #51545f;
+            font-size: 14px;
+            line-height: 2;
+            font-weight: 400;
             }
         }
     }
