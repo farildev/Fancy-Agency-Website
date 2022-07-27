@@ -73,8 +73,9 @@ header{
     }
 }
 main{
+    //Hero Section
     .hero__img{
-        background-color: #0078AA;
+        background-color: $dark-color;
         height: 100vh;
         .hero__content{
             height: 100vh;
@@ -147,12 +148,71 @@ main{
             }
         }
     }
+
+    .discuss{
+        
+        margin-top: 60px;
+        background-image: url('../img/xhero-3.webp');
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 100%;
+        height: 40vh;
+    }
+        .discuss__container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+            padding: 50px 15px;
+            width: 100%;
+            height: 100%;
+            color: $light-color;
+            .discuss__header{
+                h2{
+                    font-size: 40px;
+                }
+            }
+            .discuss__text{
+                margin-top: 16px;
+                p{
+                    font-size: 14px;
+                }
+            }
+            .discuss__btn{
+                margin-top: 30px;
+                button{
+                    color: #fff;
+                    font-size: 13px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    line-height: 44px;
+                    padding: 0 15px;
+                    width: 160px;
+                    height: 46px;
+                    border-left: 2px solid #7450fe;
+                    border-right: 2px solid #21d397;
+                    border-top: 2px solid #7450fe;
+                    border-bottom: 2px solid #21d397;
+                    background: transparent;
+                    cursor: pointer;
+                    border-radius: 2px;
+                    &:hover{
+                        transition: 300ms all ease-in-out;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+
+    //News Section
     .news{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 60px;
         .news__header{
             h1{
                 font-family: 'Poppins', sans-serif;
@@ -304,7 +364,6 @@ main{
             }
         }
     }
-}
 footer{
     margin-top: 100px;
     background-color: $dark-color;
@@ -315,6 +374,7 @@ footer{
         .footer__col-1{
             max-width: 20%;
             color: $light-color;
+            padding: 0 15px;
             .header__col-1{
                 h6{
                     font-size: 16px;
@@ -377,6 +437,7 @@ footer{
         .footer__col-2{
             max-width: 20%;
             color: $light-color;
+            padding: 0 15px;
             .header__col-2{
                 h6{
                     font-size: 16px;
@@ -404,6 +465,7 @@ footer{
         .footer__col-3{
             max-width: 20%;
             color: $light-color;
+            padding: 0 15px;
             .header__col-3{
                 h6{
                     font-size: 16px;
@@ -418,9 +480,25 @@ footer{
                     justify-content: center;
                     .list__1{
                         .footer__items{
-                            margin: 0 0 15px  -10px;
+                            margin: 0 0 15px  -20px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: 1s all;
+                            &:hover{
+                                color: #21d397;
+                                transition: 1s all;
+                                transform: translateX(15%);
+                                i{
+                                    visibility: visible;
+                                    color: #21d397;
+                                }
+                            }
                             i{
-                                display: none;
+                                visibility: hidden;
+                                font-size: 14px;
+                                transition: 350ms all;
+                                color: #21d397;
                             }
                             .footer__links{
                                 font-size: 14px;
@@ -433,8 +511,26 @@ footer{
                         margin-left: 80px;
                         .footer__items{
                             margin: 0 0 15px  -10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: 1s all ;
+                            &:hover{
+                                color: #21d397;
+                                transition: 1s all;
+                                transform: translateX(15%);
+                                i{
+                                    visibility: visible;
+                                    &:hover{
+                                        transition: 1s all;
+                                        transform: translate(15%);
+                                    }
+                                }
+                            }
                             i{
-                                display: none;
+                                visibility: hidden;
+                                color: #21d397;
+                                transition: 350ms all;
                             }
                             .footer__links{
                                 font-size: 14px;
@@ -449,6 +545,7 @@ footer{
         .footer__col-4{
             max-width: 20%;
             color: $light-color;
+            padding: 0 15px;
             .header__col-4{
                 h6{
                     font-size: 16px;
