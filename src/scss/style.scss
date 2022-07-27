@@ -181,10 +181,193 @@ header {
 
 main {
     .services{
+        background-image: url('/src/img/hero-2.webp');
+        height: 60vh;
+        background-position: center;
+        width: 100%;
+        position: relative;
+        &::after{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(4, 8, 29, 0.7);
+            content: '';
+            z-index: 1;
+            top: 0;
+            left: 0;
+        }
         .services__main{
-            background-image: url('/src/img/');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            .services__header{
+                color: $light-color;
+                z-index: 3;
+                margin-bottom: 16px;
+                h2{
+                    font-size: 38px;
+                }
+            }
+            .services__title{
+                z-index: 3;
+                margin-bottom: 16px;
+                p{
+                    font-size: 14px;
+                    color: $light-color;
+                    font-weight: 300;
+                }
+            }
+            .services__content{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .first__service{
+                    max-width: 30%;
+                    text-align: center;
+                    z-index: 4;
+                    .service__icon{
+                        color: lightgreen;
+                        font-size: 50px;
+                    }
+                    .service__name{
+                        color: $light-color;
+                        font-size: 20px;
+                        margin: 20px 0;
+                    }
+                    .service__text{
+                        font-size: 14px;
+                        color: $light-color;
+                        font-weight: 300;
+                    }
+                }
+                .second__service{
+                    max-width: 30%;
+                    text-align: center;
+                    z-index: 4;
+                    .service__icon{
+                        color: lightgreen;
+                        font-size: 50px;
+                    }
+                    .service__name{
+                        color: $light-color;
+                        font-size: 20px;
+                        margin: 20px 0;
+                    }
+                    .service__text{
+                        font-size: 14px;
+                        color: $light-color;
+                        font-weight: 300;
+                    }
+                }
+                .third__service{
+                    max-width: 30%;
+                    text-align: center;
+                    z-index: 4;
+                    .service__icon{
+                        color: lightgreen;
+                        font-size: 50px;
+                    }
+                    .service__name{
+                        color: $light-color;
+                        font-size: 20px;
+                        margin: 20px 0;
+                    }
+                    .service__text{
+                        font-size: 14px;
+                        color: $light-color;
+                        font-weight: 300;
+                    }
+                }
+            }
         }
     }
+
+    //Feedbacks Section
+
+    .feedbacks{
+        padding: 100px 0;
+        .feedbacks__main{
+            display: flex;
+            justify-content: space-between;
+            .feedback__component{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .component__img{
+                    max-width: 20%;
+                    img{
+                        border: 1px solid #dfdfdf;
+                        border-radius: 50%;
+                        width: 170px;
+                    }
+                    
+                }
+                .component__text{
+                    max-width: 80%;
+                    .component__up{
+                        font-size: 48px;
+                        color: #21d397;
+                    }
+                    .component__mid{
+                        margin-top: 16px;
+                        p{
+                            font-size: 18px;
+                            color: #51545f;
+                        }
+                    }
+                    .component__bottom{
+                        margin-top: 16px;
+                        p{
+                            color: #51545f;
+                            span{
+                                color: #b5aec4;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+    
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+    
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
     //Discuss Section
     .discuss {
