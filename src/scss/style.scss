@@ -36,14 +36,14 @@ html {
 
 header {
     height: 100px;
-    background-color: $dark-color;
+    background: $dark-color;
     border-bottom: $light-color;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-
+    z-index: 100;
     .navbar {
         padding: 20px 0;
         display: flex;
@@ -89,7 +89,16 @@ header {
 .hero {
     background-image: url('/src/img/bg1.jpg');
     height: 100vh;
-
+    &::after{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(4, 8, 29, 0.7);
+        content: '';
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
     .hero__content {
         height: 100vh;
         display: flex;
@@ -97,13 +106,13 @@ header {
         align-items: center;
         flex-direction: column;
         width: 100%;
-
+        
         .hero__trailer {
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 0 0 60px;
-
+            z-index: 3;
             .play__btn {
                 i {
                     background-color: $light-color;
@@ -131,9 +140,11 @@ header {
             margin: 0 0 60px;
             color: $light-color;
             max-width: 1110px;
+            z-index: 3;
         }
 
         .hero__btn {
+            z-index: 3;
             .btn-1 {
                 background-image: linear-gradient(to right, #7450fe 0%, #21d397 100%), linear-gradient(to right, #7450fe 0%, #21d397 100%);
                 color: $light-color;
@@ -169,16 +180,31 @@ header {
 }
 
 main {
+    .services{
+        .services__main{
+            background-image: url('/src/img/');
+        }
+    }
 
-
+    //Discuss Section
     .discuss {
-
         margin-top: 60px;
-        background-image: url('../img/xhero-3.webp');
+        background-image: url('/src/img/xhero-3.webp');
         background-repeat: no-repeat;
         object-fit: cover;
         width: 100%;
         height: 40vh;
+        position: relative;
+        &::after{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(4, 8, 29, 0.7);
+            content: '';
+            z-index: 1;
+            top: 0;
+            left: 0;
+        }
     }
 
     .discuss__container {
@@ -190,8 +216,10 @@ main {
         width: 100%;
         height: 100%;
         color: $light-color;
+        
 
         .discuss__header {
+            z-index: 2;
             h2 {
                 font-size: 40px;
             }
@@ -199,7 +227,7 @@ main {
 
         .discuss__text {
             margin-top: 16px;
-
+            z-index: 2;
             p {
                 font-size: 14px;
             }
@@ -207,7 +235,7 @@ main {
 
         .discuss__btn {
             margin-top: 30px;
-
+            z-index: 2;
             button {
                 color: #fff;
                 font-size: 13px;
