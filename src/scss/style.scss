@@ -171,5 +171,115 @@ main{
             font-weight: 400;
             }
         }
+        .news__cards{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 60px;
+            flex-wrap: wrap;
+            .card__1{
+                max-width: 30%;
+                background-color: $light-color;
+                border: 1px solid #F1F1F1;
+                .card__image{
+                    width: 100%;
+                    object-fit: cover;
+                    max-width: 100%;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .card__content{
+                    padding: 30px;
+                    .card__header{
+                        font-size: 18px;
+                        color: #232d37;
+                    }
+                    .card__text{
+                        margin-top: 16px;
+                        font-weight: 300;
+                        font-size: 14px;
+                    }
+                    .card__link{
+                        margin-top: 16px;
+                        font-size: 14px;
+                        text-transform: capitalize;
+                        color: #2bc0a4;
+                        text-decoration: underline;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .card__2{
+                max-width: 30%;
+                background-color: $light-color;
+                border: 1px solid #F1F1F1;
+                .card__image{
+                    width: 100%;
+                    object-fit: cover;
+                    max-width: 100%;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .card__content{
+                    padding: 30px;
+                    .card__header{
+                        font-size: 18px;
+                        color: #232d37;
+                    }
+                    .card__text{
+                        margin-top: 16px;
+                        font-weight: 300;
+                        font-size: 14px;
+                    }
+                    .card__link{
+                        margin-top: 16px;
+                        font-size: 14px;
+                        text-transform: capitalize;
+                        color: #2bc0a4;
+                        text-decoration: underline;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .card__3{
+                max-width: 30%;
+                background-color: $light-color;
+                border: 1px solid #F1F1F1;
+                .card__image{
+                    width: 100%;
+                    object-fit: cover;
+                    max-width: 100%;
+                    img{
+                        width: 100%;
+                        height: auto;
+                        border-style: none;
+                    }
+                }
+                .card__content{
+                    padding: 30px;
+                    .card__header{
+                        font-size: 18px;
+                        color: #232d37;
+                    }
+                    .card__text{
+                        margin-top: 16px;
+                        font-weight: 300;
+                        font-size: 14px;
+                    }
+                    .card__link{
+                        margin-top: 16px;
+                        font-size: 14px;
+                        text-transform: capitalize;
+                        color: #2bc0a4;
+                        text-decoration: underline;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
     }
 }
