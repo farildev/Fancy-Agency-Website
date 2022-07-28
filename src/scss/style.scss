@@ -26,6 +26,7 @@ body,
 html {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
 .container {
@@ -36,8 +37,8 @@ html {
 
 header {
     height: 100px;
-    background: $dark-color;
-    border-bottom: $light-color;
+    background: transparent;
+    border-bottom: 1px solid #dfdfdf;
     position: fixed;
     top: 0;
     left: 0;
@@ -88,6 +89,7 @@ header {
 .hero {
     background-image: url('/src/img/bg1.jpg');
     height: 100vh;
+    position: relative;
     &::after{
         position: absolute;
         width: 100%;
@@ -147,15 +149,17 @@ header {
             .btn-1 {
                 background-image: linear-gradient(to right, #7450fe 0%, #21d397 100%), linear-gradient(to right, #7450fe 0%, #21d397 100%);
                 color: $light-color;
-                width: 160px;
-                height: 46px;
                 border: none;
                 outline: none;
-                padding: 0 15px;
+                padding: 15px 45px;
                 cursor: pointer;
                 font-size: 13px;
                 font-weight: 600;
                 border-radius: 3px;
+                border-left: 2px solid #7450fe;
+                border-right: 2px solid #21d397;
+                border-top: 2px solid #21d397;
+                border-bottom: 2px solid #7450fe;
             }
 
             .btn-2 {
@@ -164,21 +168,181 @@ header {
                 border-top: 2px solid #21d397;
                 border-bottom: 2px solid #7450fe;
                 color: $light-color;
-                width: 160px;
-                height: 46px;
                 background: none;
                 outline: none;
-                padding: 0 15px;
+                padding: 15px 45px;
                 cursor: pointer;
                 font-size: 13px;
                 font-weight: 600;
                 border-radius: 3px;
+                transition: 1s all;
+                &:hover{
+                    background: linear-gradient(to right, #7450fe, #21d397);
+                    color: $light-color;
+                    transition: 1s all;
+                }
+            }
+        }
+    }
+}
+//Badge Section
+.badge{
+    position: relative;
+    .badge__main{
+        position: absolute;
+        bottom: -110px;
+        left: 19%;
+        width: 100%;
+        z-index: 99;
+        background-color: $light-color;
+        -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.24);
+        -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.24);
+         box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.24);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .badge-1{
+            max-width: 30%;
+            padding: 45px;
+            .badge__header{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 8px;
+                i{
+                    font-size: 24px;
+                    color: $link-color;
+                }
+                h5{
+                    font-size: 20px;
+                    margin-left: 10px;
+                }
+            }
+            .badge__text{
+                p{
+                    font-size: 14px;
+                    color: #51545f;
+                    font-weight: 300;
+                }
+            }
+        }
+        .badge-2{
+            max-width: 30%;
+            padding: 45px;
+            .badge__header{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 8px;
+                i{
+                    font-size: 24px;
+                    color: $link-color;
+                }
+                h5{
+                    font-size: 20px;
+                    margin-left: 10px;
+                }
+            }
+            .badge__text{
+                p{
+                    font-size: 14px;
+                    color: #51545f;
+                    font-weight: 300;
+                }
+            }
+        }
+        .badge-3{
+            max-width: 30%;
+            padding: 45px;
+            .badge__header{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 8px;
+                i{
+                    font-size: 24px;
+                    color: $link-color;
+                }
+                h5{
+                    font-size: 20px;
+                    margin-left: 10px;
+                }
+            }
+            .badge__text{
+                p{
+                    font-size: 14px;
+                    color: #51545f;
+                    font-weight: 300;
+                }
             }
         }
     }
 }
 
 main {
+    //About Section
+    .about{
+        background-color: #f7f7f7;
+        .about__main{
+            padding: 200px 0 100px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .about__left{
+                max-width: 45%;
+                .about__header{
+                    margin-bottom: 25px;
+                    h2{
+                        font-size: 38px;
+                        font-weight: 500;
+                        color: #232d37;
+                        line-height: 1.25;
+                    }
+                }
+                .about__text{
+                    margin-bottom: 35px;
+                    p{
+                        color: #51545f;
+                        font-size: 14px;
+                        line-height: 2;
+                        font-weight: 400;
+                        margin-top: 24px;
+                    }
+                }
+                .about__btn{
+                    a{
+                        padding: 15px 45px;
+                        background: transparent;
+                        border-left: 2px solid #7450fe;
+                        border-right: 2px solid #21d397;
+                        border-top: 2px solid #21d397;
+                        border-bottom: 2px solid #7450fe;
+                        border-radius: 3px;
+                        font-size: 13px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        line-height: 44px;
+                        transition: 1s all ;
+                        cursor: pointer;
+                        &:hover{
+                            background: linear-gradient(to right, #7450fe, #21d397);
+                            color: $light-color;
+                            transition: 1s all;
+                        }
+                    }
+                }
+            }
+            .about__right{
+                max-width: 45%;
+                img{
+                    max-width: 445px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+
     //Skills Section
     .skills{
         .skills__main{
@@ -187,7 +351,7 @@ main {
             justify-content: space-between;
             align-items: center;
             position: relative;
-            height: 90vh;
+            padding: 200px 0;
             .skills__left{
                 max-width: 45%;
                 img{
@@ -317,10 +481,8 @@ main {
                 }
                 .skills__btn{
                   margin-top: 60px;
-                    button{
+                  .btn{
                         background: transparent;
-                        width: 160px;
-                        height: 46px;
                         border-left: 2px solid #7450fe;
                         border-right: 2px solid #21d397;
                         border-top: 2px solid #21d397;
@@ -330,19 +492,19 @@ main {
                         font-weight: 600;
                         text-transform: uppercase;
                         line-height: 44px;
-                        padding: 0 15px;
-                        transition: 500ms all ease-in-out;
+                        padding: 15px 30px;
+                        transition: 1s all ;
                         cursor: pointer;
                         &:hover{
                             background: linear-gradient(to right, #7450fe, #21d397);
                             color: $light-color;
-                            transition: 500ms all ease-in-out;
+                            transition: 1s all;
                         }
-                    }
                 }
             }
         }
     }
+}
 
     //Services Section
     .services{
