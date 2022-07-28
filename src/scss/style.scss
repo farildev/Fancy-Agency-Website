@@ -33,12 +33,13 @@ html {
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
+    padding: 0 60px;
 }
 
 header {
     height: 100px;
     background: transparent;
-    border-bottom: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf ;
     position: fixed;
     top: 0;
     left: 0;
@@ -191,7 +192,8 @@ header {
     .badge__main{
         position: absolute;
         bottom: -110px;
-        left: 19%;
+        left: 30px;
+        right: 30px;
         width: 100%;
         z-index: 99;
         background-color: $light-color;
@@ -201,6 +203,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         .badge-1{
             max-width: 30%;
             padding: 45px;
@@ -395,7 +398,7 @@ main {
                         .bar-1{
                             position: relative;
                             margin-top: 10px;
-                            width: 440.5px;
+                            max-width: 440.5px;
                             height: 8px;
                             background-color: #e5e5e5;
                             span{
@@ -419,7 +422,7 @@ main {
                         .bar-2{
                             position: relative;
                             margin-top: 10px;
-                            width: 440.5px;
+                            max-width: 440.5px;
                             height: 8px;
                             background-color: #e5e5e5;
                             span{
@@ -443,7 +446,7 @@ main {
                         .bar-3{
                             position: relative;
                             margin-top: 10px;
-                            width: 440.5px;
+                            max-width: 440.5px;
                             height: 8px;
                             background-color: #e5e5e5;
                             span{
@@ -467,7 +470,7 @@ main {
                         .bar-4{
                             position: relative;
                             margin-top: 10px;
-                            width: 440.5px;
+                            max-width: 440.5px;
                             height: 8px;
                             background-color: #e5e5e5;
                             span{
@@ -1228,4 +1231,68 @@ footer {
             }
         }
     }
+}
+
+@media (max-width:1280px){
+    .badge{
+        display: none;
+        .badge__main{
+            flex-direction: column;
+            flex-wrap: wrap;
+            top: 0;
+            .badge-1{
+                max-width: 50%;
+            }
+            .badge-2{
+                max-width: 50%;
+            }
+            .badge-3{
+                max-width: 0%;
+            }
+        }
+    }
+    main{
+        .about{
+            .about__main{
+                flex-wrap: wrap;
+                .about__left{
+                    max-width: 100%;
+                }
+                .about__right{
+                    max-width: 100%;
+                    margin-top: 40px;
+                }
+            }
+        }
+        .skills{
+            .skills__main{
+                flex-wrap: wrap;
+                .skills__left{
+                    max-width: 100%;   
+                }
+                .skills__right{
+                    max-width: 100%;
+                    margin-top: 60px;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:992px){
+    header{
+        .navbar{
+            
+        }
+    }
+}
+
+@media (max-width:768px){
+    
+}
+
+@media (max-width:480px){
+    
 }
