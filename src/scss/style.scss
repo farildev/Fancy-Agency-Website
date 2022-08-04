@@ -1251,6 +1251,21 @@ footer {
             }
         }
     }
+    .copyright{
+        height: auto;
+        .content{
+            flex-wrap: wrap;
+            flex-direction: column;
+            .copyright__text{
+                max-width: 100%;
+                margin-top: 20px;
+            }
+            .copyright__list{
+                max-width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
     main{
         .about{
             .about__main{
@@ -1287,10 +1302,88 @@ footer {
             
         }
     }
+    main{
+        .feedbacks{
+            .feedbacks__main{
+                .feedback__component{
+                    flex-wrap: wrap;
+                flex-direction: column;
+                    .component__img{
+                        max-width: 100%;
+                    }
+                    .component__text{
+                        max-width: 100%;
+                        .component__up{
+                            max-width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .footer__container{
+            flex-wrap: wrap;
+            .footer__col-1{
+                max-width: 100%;
+                margin: 15px;
+            }
+            .footer__col-2{
+                max-width: 100%;
+                margin: 15px;
+            }
+            .footer__col-3{
+                max-width: 100%;
+                margin: 15px;
+            }
+            .footer__col-4{
+                max-width: 100%;
+                margin: 15px;
+            }
+        }
+    }
 }
 
 @media (max-width:768px){
-    
+    main{
+        .services{
+            height: auto;
+            padding: 60px 0;
+            .services__main{
+                .services__content{
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    .first__service{
+                        max-width: 100%;
+                    }
+                    .second__service{
+                        max-width: 100%;
+                    }
+                    .third__service{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        .news{
+            .news__cards{
+                .card__1{
+                    max-width: 100%;
+                }
+                .card__2{
+                    max-width: 100%;
+                    margin-top: 30px;
+                }.card__3{
+                     max-width: 100%;
+                    margin-top: 30px;
+                 }
+
+            }
+        }
+    }
 }
 
 @media (max-width:480px){
