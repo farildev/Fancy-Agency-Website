@@ -40,19 +40,22 @@ html {
     padding: 0 20px;
     height: 100px;
     background: transparent;
-
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 100;
+    .scrolling-active{
+        background: #04081d;
+        opacity: 60%;
+    }
     .navbar {
         padding: 20px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        z-index: 9;
         .logo {
             .icon {
                 font-size: 36px;
@@ -90,6 +93,15 @@ html {
             font-size: 48px;
             cursor: pointer;
         }
+    }
+}
+.scrolling-active{
+    background: #04081d;
+    opacity: 0.8;
+    scroll-behavior: smooth;
+    &:hover{
+        transition: 300ms all;
+
     }
 }
 
