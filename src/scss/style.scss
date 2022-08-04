@@ -37,8 +37,9 @@ html {
 }
 
 .header {
+    padding: 0 20px;
     height: 100px;
-    background: transparent;
+    background-color: $dark-color;
     border-bottom: 1px solid #dfdfdf ;
     position: fixed;
     top: 0;
@@ -82,6 +83,12 @@ html {
                     padding: 8px;
                 }
             }
+        }
+        .toggle__menu{
+            display: none;
+            color: $light-color;
+            font-size: 48px;
+            cursor: pointer;
         }
     }
 }
@@ -136,17 +143,24 @@ html {
         }
 
         .hero__text {
-            font-size: 48px;
+            max-width: 1110px;
+            z-index: 3;
+            p{
+                font-size: 48px;
             font-weight: 600;
             text-align: center;
             margin: 0 0 60px;
             color: $light-color;
-            max-width: 1110px;
-            z-index: 3;
+            }
         }
 
         .hero__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
             z-index: 3;
+            width: 100%;
             .btn-1 {
                 background-image: linear-gradient(to right, #7450fe 0%, #21d397 100%), linear-gradient(to right, #7450fe 0%, #21d397 100%);
                 color: $light-color;
@@ -161,6 +175,7 @@ html {
                 border-right: 2px solid #21d397;
                 border-top: 2px solid #21d397;
                 border-bottom: 2px solid #7450fe;
+                margin: 15px;
             }
 
             .btn-2 {
@@ -177,6 +192,7 @@ html {
                 font-weight: 600;
                 border-radius: 3px;
                 transition: 1s all;
+                margin: 15px;
                 &:hover{
                     background: linear-gradient(to right, #7450fe, #21d397);
                     color: $light-color;
@@ -1268,14 +1284,25 @@ footer {
     }
     main{
         .about{
+            height: auto;
             .about__main{
+                padding: 60px 20px;
                 flex-wrap: wrap;
+                flex-direction: column;
                 .about__left{
                     max-width: 100%;
+                    text-align: center;
                 }
                 .about__right{
                     max-width: 100%;
                     margin-top: 40px;
+                }
+                .about__btn{
+                    max-width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: auto;
                 }
             }
         }
@@ -1297,9 +1324,14 @@ footer {
 
 
 @media (max-width:992px){
-    header{
+    .header{
         .navbar{
-            
+            .nav__list{
+                display: none;
+            }
+            .toggle__menu{
+                display: block;
+            }
         }
     }
     main{
@@ -1387,5 +1419,53 @@ footer {
 }
 
 @media (max-width:480px){
-    
+    .hero{
+        height: auto;
+        .hero__content{
+            .hero__text{
+                p{
+                    font-size: 38px;
+                }
+            }
+            .hero__btn{
+                width: 100%;
+                flex-wrap: wrap;
+                flex-direction: column;
+
+                .btn__1{
+
+                }
+                .btn__2{
+                }
+            }
+        }
+    }
+    main{
+        .about{
+            .about__main{
+                .about__left{
+                    max-width: 100%;
+                }
+                .about__right{
+                    max-width: 100%;
+                    img{
+                        max-width: 330px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:430px){
+    .hero{
+        height: auto;
+        .hero__content{
+            .hero__text{
+                p{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
 }
