@@ -1,2 +1,2 @@
-# Fancy-Agency-Website
-Created by @farildev
+# Fancy Agency - Your ideal management agency
+Created by @farildev & Platon Tech Development team
