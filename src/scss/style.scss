@@ -46,10 +46,7 @@ html {
     right: 0;
     bottom: 0;
     z-index: 100;
-    .scrolling-active{
-        background: #04081d;
-        opacity: 60%;
-    }
+    transition: background 300ms;
     .navbar {
         padding: 20px 0;
         display: flex;
@@ -96,13 +93,9 @@ html {
     }
 }
 .scrolling-active{
-    background: #04081d;
-    opacity: 0.8;
+    background: rgba(4, 8, 29, .75);
     scroll-behavior: smooth;
-    &:hover{
-        transition: 300ms all;
-
-    }
+    transition: background 300ms;
 }
 
 //Hero Section
@@ -1217,7 +1210,7 @@ footer {
 
 .copyright {
     background-color: #04081d;
-    height: 50px;
+    padding: 20px 0;
 
     .content {
         display: flex;
@@ -1226,7 +1219,7 @@ footer {
         height: 100%;
 
         .copyright__text {
-            max-width: 45%;
+            max-width: 50%;
 
             p {
                 color: #51545f;
@@ -1246,7 +1239,7 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
-
+            flex-wrap: wrap;
             .copyright__items {
                 margin: 0 20px;
 
@@ -1392,11 +1385,25 @@ footer {
 }
 
 @media (max-width:768px){
+    .hero{
+        .hero__content{
+            .hero__text{
+                p{
+                    font-size: 44px;
+                }
+            }
+        }
+    }
     main{
         .services{
             height: auto;
             padding: 60px 0;
             .services__main{
+                .services__title{
+                    p{
+                        text-align: center;
+                    }
+                }
                 .services__content{
                     flex-wrap: wrap;
                     flex-direction: column;
@@ -1408,6 +1415,21 @@ footer {
                     }
                     .third__service{
                         max-width: 100%;
+                    }
+                }
+            }
+        }
+        .discuss{
+            .discuss__container{
+                .discuss__header{
+                    h2{
+                        font-size: 36px;
+                        text-align: center;
+                    }
+                }
+                .discuss__text{
+                    P{
+                        text-align: center;
                     }
                 }
             }
@@ -1452,6 +1474,13 @@ footer {
             }
         }
     }
+    .copyright{
+        .content{
+            .copyright__list{
+                max-width: 100%;
+            }
+        }
+    }
     main{
         .about{
             .about__main{
@@ -1462,6 +1491,22 @@ footer {
                     max-width: 100%;
                     img{
                         max-width: 330px;
+                    }
+                }
+            }
+        }
+        .discuss{
+            .discuss__container{
+                .discuss__header{
+                    h2{
+                        font-size: 30px;
+                        text-align: center;
+                    }
+                }
+                .discuss__text{
+                    P{
+                        text-align: center;
+                        font-size: 13px;
                     }
                 }
             }
