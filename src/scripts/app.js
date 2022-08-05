@@ -6,7 +6,10 @@ window.addEventListener('scroll' , function(){
     header.classList.toggle('scrolling-active' , windowPosition);
 })
 
-const navMenu = document.querySelector('.toggle__menu');
-navMenu.addEventListener('click', function(e){
-    navMenu.classList.toggle('active')
-});
+const menuBtn = document.querySelector('.menu__btn');
+const mobileNav = document.querySelector('.nav__mobile');
+
+menuBtn.addEventListener('click' , function () {
+    menuBtn.classList.toggle('is-active');
+    mobileNav.classList.toggle('is-active')
+})

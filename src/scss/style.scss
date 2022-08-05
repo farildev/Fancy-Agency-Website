@@ -35,20 +35,17 @@ html {
     width: 100%;
     padding: 0 60px;
 }
-.nav__active{
-    visibility: visible;
-}
-.nav__menu{
+
+.nav__mobile{
     position: fixed;
-    top: 0;
+    width: 100%;
+    top: 100%;
     left: 0;
-    right: 0;
-    bottom: 0;
     z-index: 99;
+    min-height: 100vh;
     margin-top: 100px;
     background: linear-gradient(to right, #7450fe, #21d397);
-    height: 400px;
-    visibility: hidden;
+    display: block;
     .nav__items{
         li{
             margin: 20px 0;
@@ -68,6 +65,9 @@ html {
         }
     }
 }
+.nav__mobile .is-active{
+    top: 0;
+}
 .header {
     padding: 0 20px;
     height: 100px;
@@ -78,6 +78,7 @@ html {
     right: 0;
     bottom: 0;
     z-index: 100;
+    border-bottom: 1px solid #dfdfdf;
     transition: background 300ms;
     .navbar {
         padding: 20px 0;
@@ -116,7 +117,7 @@ html {
                 }
             }
         }
-        .toggle__menu{
+        .menu__btn{
             display: none;
             color: $light-color;
             font-size: 48px;
@@ -1366,7 +1367,7 @@ footer {
             .nav__list{
                 display: none;
             }
-            .toggle__menu{
+            .menu__btn{
                 display: block;
             }
         }
