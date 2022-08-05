@@ -35,7 +35,39 @@ html {
     width: 100%;
     padding: 0 60px;
 }
-
+.nav__active{
+    visibility: visible;
+}
+.nav__menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    margin-top: 100px;
+    background: linear-gradient(to right, #7450fe, #21d397);
+    height: 400px;
+    visibility: hidden;
+    .nav__items{
+        li{
+            margin: 20px 0;
+            a{
+                color: $light-color;
+                
+            }
+        }
+        .nav__icons{
+            a{
+                color: $light-color;
+                font-size: 20px;
+                &:last-child{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
 .header {
     padding: 0 20px;
     height: 100px;
