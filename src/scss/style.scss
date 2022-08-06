@@ -35,17 +35,19 @@ html {
     width: 100%;
     padding: 0 60px;
 }
-
+.nav__mobile .is-active{
+    transform: translate(-50%,50%);
+}
 .nav__mobile{
     position: fixed;
     width: 100%;
-    top: 100%;
+    top: 0;
     left: 0;
     z-index: 99;
-    min-height: 100vh;
+    height: 400px;
     margin-top: 100px;
     background: linear-gradient(to right, #7450fe, #21d397);
-    display: block;
+    visibility: hidden;
     .nav__items{
         li{
             margin: 20px 0;
@@ -65,9 +67,7 @@ html {
         }
     }
 }
-.nav__mobile .is-active{
-    top: 0;
-}
+
 .header {
     padding: 0 20px;
     height: 100px;
