@@ -1,5 +1,9 @@
-# Fancy Agency - Your ideal management agency
-Created by @farildev & Platon Tech Development team
+<h1 align = "center">Fancy Agency - Your ideal management agency</h1>
+<p align = "center">Created by @farildev & Platon Tech Development team</p>
+<br>
+
+<br>
+<br>
 
 <h1 align="center">Platon Tech - IT Consulting & IT Services</h1>
 <img src="./src/img/Linkedin Banner.jpg" alt="">
