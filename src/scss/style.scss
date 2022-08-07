@@ -493,8 +493,8 @@ main {
                 max-width: 35%;
                 .skills__header{
                     margin-bottom: 15px;
-                    font-size: 30px;
                     h2{
+                        font-size: 48px;
                         font-weight: 500;
                         color: #232d37;
                         line-height: 1.25;
@@ -845,10 +845,7 @@ main {
                 font-size: 13px;
                 font-weight: 600;
                 text-transform: uppercase;
-                line-height: 44px;
-                padding: 0 15px;
-                width: 160px;
-                height: 46px;
+                padding:15px 30px;
                 border: 2px solid #21d397;
                 border-radius: 3px;
                 background: transparent;
@@ -1588,11 +1585,27 @@ footer {
             .about__main{
                 .about__left{
                     max-width: 100%;
+                    .about__header{
+                        h2{
+                            font-size: 28px;
+                        }
+                    }
                 }
                 .about__right{
                     max-width: 100%;
                     img{
                         max-width: 330px;
+                    }
+                }
+            }
+        }
+        .skills{
+            .skills__main{
+                .skills__right{
+                    .skills__header{
+                        h2{
+                            font-size: 36px;
+                        }
                     }
                 }
             }
@@ -1613,6 +1626,14 @@ footer {
                 }
             }
         }
+        .news{
+            .news__header{
+                text-align: center;
+            }
+            .news__text{
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -1631,5 +1652,54 @@ footer {
 }
 
 @media (max-width:360px){
-    
+    main{
+        .about{
+            .about__main{
+                .about__left{
+                    .about__header{
+                        h2{
+                            font-size: 28px;
+                        }
+                    }
+                }
+                .about__right{
+                    img{
+                        max-width: 280px;
+                    }
+                }
+            }
+        }
+        .skills{
+            .skills__main{
+                .skills__right{
+                    .skills__header{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        .services{
+            .services__main{
+                .services__header{
+                    h2{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .feedbacks{
+            .feedbacks__main{
+                .feedback__component{
+                    .component__text{
+                        .component__mid{
+                            font-size: 16px;
+                        }
+                        .component__bottom{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
