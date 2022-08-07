@@ -15,3 +15,18 @@ menuBtn.addEventListener('click' , function () {
     
 })
 
+const searchBar = document.querySelector('.searchbar');
+const searchIcon = document.querySelector('#search-icon');
+const closeIcon = document.querySelector('#close-icon')
+
+searchIcon.addEventListener('click' , function () {
+    searchIcon.classList.toggle('active');
+    searchBar.classList.toggle('active');
+
+})
+
+closeIcon.addEventListener('click', function() {
+    closeIcon.classList.toggle('close');
+    searchBar.classList.toggle('close');
+})
+
