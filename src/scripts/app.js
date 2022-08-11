@@ -27,6 +27,5 @@ searchIcon.addEventListener('click' , function () {
 
 closeIcon.addEventListener('click', function() {
     closeIcon.classList.toggle('closed');
-    searchBar.classList.toggle('closed');
 })
 
