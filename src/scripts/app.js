@@ -18,13 +18,14 @@ menuBtn.addEventListener('click' , function () {
 const searchBar = document.querySelector('.searchbar');
 const searchIcon = document.querySelector('#search-icon');
 const closeIcon = document.querySelector('#close-icon')
+const navSearch = document.querySelector('#nav-search');
 
 searchIcon.addEventListener('click' , function () {
-    console.log("clicked button");
     searchBar.style.display = "block";
+    e.preventDefault();
 })
 
 closeIcon.addEventListener('click', function() {
-    
+    searchBar.style.display = "none";
 })
 
