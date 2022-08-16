@@ -20,13 +20,11 @@ const searchIcon = document.querySelector('#search-icon');
 const closeIcon = document.querySelector('#close-icon')
 
 searchIcon.addEventListener('click' , function () {
-    searchIcon.classList.toggle('active');
-    searchBar.classList.toggle('active');
-    e.preventDefault();
+    console.log("clicked button");
+    searchBar.style.display = "block";
 })
 
 closeIcon.addEventListener('click', function() {
-    closeIcon.classList.toggle('closed');
-    searchBar.classList.toggle('closed');
+    
 })
 
